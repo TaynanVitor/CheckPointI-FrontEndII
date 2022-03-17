@@ -18,6 +18,14 @@ function exibirSidebar(e) {
 
 btn.addEventListener("click", exibirSidebar);
 
+// 2. **(20pts)** O usuário poderá usar o teclado para abrir ou fechar a sidebar. No caso, as tecla `Space`
 
+function exibirSidebarComSpace(e) {
+  if (e.code == "Space") {
+    sidebar.classList.toggle("l-sidebar--open");
+  }
+}
+
+body.addEventListener("keydown", exibirSidebarComSpace);
 
 // })();
