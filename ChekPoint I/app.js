@@ -28,4 +28,11 @@ function exibirSidebarComSpace(e) {
 
 body.addEventListener("keydown", exibirSidebarComSpace);
 
-// })();
+
+// 3. **(20pts)** O usuário poderá usar o mouse para abrir ou fechar a sidebar. No caso, um duplo click em qualquer local do site irá abrir ou fechar a sidebar.
+
+function exibirSidebarComDbl() {
+  sidebar.classList.toggle("l-sidebar--open");
+}
+
+body.addEventListener("dblclick", exibirSidebarComDbl);
