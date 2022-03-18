@@ -2,8 +2,15 @@
 
 Adicione uma item na lista com o nome do trio e link do repositório. Caso tenha dúvida, procure o professor, turo(a) e/ou auxiliar técnico.
 
+Taynan Vitor
+Wellington Siqueira
+Moises Bollela
+Mateus Praxedes
+
 <br>
 
 ## Lista de repositórios da atividade resolvida
 
 Coloque seu repositório na lista a seguir:
+
+https://github.com/TaynanVitor/CheckPointI-FrontEndII
