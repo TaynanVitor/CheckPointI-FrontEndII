@@ -36,3 +36,38 @@ function exibirSidebarComDbl() {
 }
 
 body.addEventListener("dblclick", exibirSidebarComDbl);
+
+// 4. **(20pts)** Um boxe de texto irá acompanhar o cursor do mouse.
+
+// 4.1. O texto deverá mudar quando o cursor do mouse sobrepor qualquer uma das sessão do site:
+
+// - Receberá o texto `Bem vindo`.
+// - Receberá o texto `Sobre mim`.
+// - Receberá o texto `Contatos`.
+
+let sobre = document.querySelector("#sobre-mim");
+let bemVindo = document.querySelector(".bg__profile");
+let contatos = document.querySelector("#contatos");
+
+function exibirTooltipBemVindo() {
+  bemVindo.setAttribute("title", "Bem vindo");
+}
+
+bemVindo.addEventListener("mousemove", exibirTooltipBemVindo);
+
+function exibirTooltipSobreMim() {
+  sobre.setAttribute("title", "Sobre mim");
+}
+
+sobre.addEventListener("mousemove", exibirTooltipSobreMim);
+
+function exibirTooltipContatos() {
+  contatos.setAttribute("title", "Contatos");
+}
+
+contatos.addEventListener("mousemove", exibirTooltipContatos);
+
+// 5. **(20pts)** Corrija o erro presente no console do DevTools.
+
+  // Corrigir o erro estava na ligação HTML e JS, trocamos o "HREF" por "SRC"//
+ 
