@@ -46,23 +46,42 @@ body.addEventListener("dblclick", exibirSidebarComDbl);
 // - Receberá o texto `Contatos`.
 
 let sobre = document.querySelector("#sobre-mim");
+let span = document.createElement("span");
 let bemVindo = document.querySelector(".bg__profile");
 let contatos = document.querySelector("#contatos");
 
-function exibirTooltipBemVindo() {
-  bemVindo.setAttribute("title", "Bem vindo");
+function exibirTooltipBemVindo(e) {
+  span.innerText = 'Bem vindo!'
+  span.style.position = 'absolute'
+  body.appendChild(span)
+  let xPos = e.pageX + 30 ;
+  let yPos = e.pageY - 5;
+  span.style.left = xPos + 'px';
+  span.style.top = yPos + 'px';
 }
 
 bemVindo.addEventListener("mousemove", exibirTooltipBemVindo);
 
-function exibirTooltipSobreMim() {
-  sobre.setAttribute("title", "Sobre mim");
+function exibirTooltipSobreMim(e) {
+  span.innerText = 'Sobre Mim'
+  span.style.position = 'absolute'
+  body.appendChild(span)
+  let xPos = e.pageX + 30 ;
+  let yPos = e.pageY - 5;
+  span.style.left = xPos + 'px';
+  span.style.top = yPos + 'px';
 }
 
 sobre.addEventListener("mousemove", exibirTooltipSobreMim);
 
-function exibirTooltipContatos() {
-  contatos.setAttribute("title", "Contatos");
+function exibirTooltipContatos(e) {
+  span.innerText = 'Contato'
+  span.style.position = 'absolute'
+  body.appendChild(span)
+  let xPos = e.pageX + 30 ;
+  let yPos = e.pageY - 5;
+  span.style.left = xPos + 'px';
+  span.style.top = yPos + 'px';
 }
 
 contatos.addEventListener("mousemove", exibirTooltipContatos);
